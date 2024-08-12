@@ -1,3 +1,5 @@
-export default function Button() {
-  return <div>Remote Two Button</div>;
+import Button from '@mui/material/Button';
+
+export default function ButtonUsoage() {
+  return <Button variant="contained">Remote Two</Button>
 }
