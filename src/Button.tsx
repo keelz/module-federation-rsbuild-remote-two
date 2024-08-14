@@ -1,9 +1,9 @@
 import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
 
-const handleClick = () => console.warn('remote two, checking in');
-
 export default function ButtonUsoage() {
+  const handleClick = () => {};
+
   return (
     <Grid container>
       <Grid item xs={12}>

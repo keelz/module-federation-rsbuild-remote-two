@@ -21,6 +21,8 @@ export default defineConfig({
           name: 'remote_two',
           exposes: {
             './button': './src/Button.tsx',
+            './store': './src/store',
+            './reducer': './src/features/reducer',
           },
           shared: {
             ...dependencies,
@@ -39,6 +41,14 @@ export default defineConfig({
             '@emotion/react': {
               singleton: true,
               requiredVersion: dependencies['@emotion/react'],
+            },
+            '@reduxjs/toolkit': {
+              singleton: true,
+              requiredVersion: dependencies['@reduxjs/toolkit'],
+            },
+            'react-redux': {
+              singleton: true,
+              requiredVersion: dependencies['react-redux']
             },
           },
         }),
