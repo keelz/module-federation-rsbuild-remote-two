@@ -30,11 +30,9 @@ export default defineConfig({
         new ModuleFederationPlugin({
           name: 'remote_two',
           exposes: {
-            './button': './src/Button',
             './reducer': './src/features/reducer',
-            './state': './src/state.ts',
+            './SharedComponent': './src/SharedComponent',
           },
-          remotes: getRemotes(process.env.REMOTES),
           shared: {
             ...dependencies,
             'react': {

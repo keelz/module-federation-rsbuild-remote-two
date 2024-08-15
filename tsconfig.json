@@ -16,7 +16,7 @@
     "useDefineForClassFields": true,
     "allowImportingTsExtensions": true,
     "paths": {
-      "*": ["./@mf-types/*"]
+      "*": ["./@mf-types/*", "./src/@store-types/*"]
     }
   },
   "include": ["src", "tests"]
